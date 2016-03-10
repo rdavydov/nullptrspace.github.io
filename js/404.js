@@ -17,6 +17,9 @@ $('.four-oh-four-form').on('submit', function(e){
 
 	 if (val === 'kittens'){
     showKittens();
+  }else if(val === 'home')
+  {
+      location.replace("http://nullptr.space/");
   }else {
     resetForm();
   }
