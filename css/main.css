@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic-ext);
-
 body {
     background-image: url(/img/bg.png);
     background-repeat: repeat;
@@ -12,44 +11,49 @@ body {
                     SHELL HEADER
 ------------------------------------------------------*/
 
-.shellheader {
-    margin-top: 0px;
-    padding-top: 30px;
-    padding-bottom: 45px;
-    height: 90px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    background: white;
-    color: #2F2F2F;
-    width: 100%;
-    border: 0;
-    position: relative;
-    display: block;
-}
-
-
 .brandlogo {
     padding: 0 20px 0 20px;
     border-right: solid 1px rgba(0, 0, 0, .4);
+    position: relative;
+    float: left;
 }
 
-.shellheader > li > a {
+.header {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1em;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    background: white;
+    color: #2F2F2F;
+}
+
+.header ul {
+    display: inline-block;
+    padding-bottom: 2em;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 1em;
+}
+
+.header ul>li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.header ul>li>a {
     margin-left: 0.1em;
     padding: 0 1em;
     line-height: 40px;
     color: #2F2F2F;
     text-decoration: none;
+    display: inline-block;
     transition: background-color ease-out .5s;
 }
 
-.shellheader > li {
-    height: 100%;
-    display: inline;
-}
-
-.shellheader > li > a:hover {
+.header ul>li>a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
-
 
 /*------------------------------------------------------
                         CONTAINER
